@@ -1,0 +1,397 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f6f2f2;
+}
+
+nav {
+    height: 90px;
+    background-color: #313030;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    min-height: 100%;
+    font-size: 14px;
+    padding: 35px 25px;
+}
+
+.active-link {
+    background-color: #ff3f40;
+}
+
+.section-banner {
+    background-color: #f6f2f2;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 105px;
+    padding-bottom: 120px;
+}
+
+.banner-left {
+    width: 50%;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+p {
+    color: #6f6d6d;
+}
+
+.banner-button {
+    display: block;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: #ff2d2d;
+    padding: 20px 60px;
+    max-width: 225px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+video {
+    width: 550px;
+    height: 355px;
+    object-fit: inherit;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.44);
+}
+
+.learn-more {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 110px;
+    padding-bottom: 115px;
+}
+
+.learn-more-left,
+.learn-more-right {
+    width: 50%;
+}
+
+h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.learn-more-button {
+    border: 2px solid red;
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 20px 60px;
+    display: block;
+    margin-top: 60px;
+    max-width: 227px;
+    min-height: 55px;
+}
+
+.learn-more-right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bullet-img {
+    width: 45px;
+    margin-bottom: 35px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.bullet {
+    width: 50%;
+    padding: 0 35px 55px 0;
+}
+
+.feature-product-top {
+    padding-top: 115px;
+    padding-bottom: 35px;
+    text-align: center;
+    max-width: 505px;
+    margin: 0 auto;
+}
+
+.feature-hr {
+    border: 2px solid #ff2d2d;
+    width: 130px;
+}
+
+.feature-product-bottom {
+    padding-top: 90px;
+}
+
+.feature-product-bottom-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4c4c4c;
+    font-size: 22px;
+    margin: 0 40px;
+}
+
+.feature-link.active {
+    color: #ff2d2d;
+}
+
+.feature-gallery {
+    padding-top: 65px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature-gallery-img {
+    width: 298px;
+    height: 291px;
+    margin-bottom: 20px;
+}
+
+.team-hr {
+    margin: 33px auto 70px 0;
+    width: 130px;
+    border: 2px solid #ff2d2d;
+
+}
+
+.our-team-bottom {
+    display: flex;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.our-team-left {
+    width: 322px;
+    height: 460px;
+    margin-right: 75px;
+}
+
+.team-social-nav {
+    padding-top: 50px;
+}
+
+.team-social-link {
+    font-style: italic;
+    text-decoration: none;
+    padding-right: 30px;
+    color: #585858;
+}
+
+.social-review {
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+
+.social-review-img {
+    width: 197px;
+    height: 217px;
+}
+
+.pop-up {
+    width: 100%;
+    height: 40px;
+    background-color: #7a786e;
+    position: relative;
+    top: -40px;
+}
+
+.pop-up-p {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.subscribe-section {
+    background-color: #f5f0dd;
+    color: white;
+}
+
+.subscribe-block {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 140px;
+}
+
+h5 {
+    font-size: 45px;
+    color: white;
+    padding-top: 150px;
+    margin-bottom: 35px;
+}
+
+.subscribe-block-p {
+    color: white;
+    margin-bottom: 65px;
+}
+
+.email-sub {
+    width: 522px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 40px;
+}
+
+.subscribe-btn {
+    width: 215px;
+    height: 80px;
+    background-color: #ff2d2d;
+    border-radius: 5px;
+    border: none;
+    margin-left: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.get-in-touch {
+    width: 732px;
+    margin-top: 45px;
+}
+
+.get-in-touch-hr {
+    border: 2px solid #ff3b3b;
+    width: 130px;
+    margin: 60px 0 75px 0;
+}
+
+.flex-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form-input,
+textarea {
+    background-color: #e5e5e5;
+    color: #444444;
+    border: none;
+    border-radius: 5px;
+    padding-left: 50px;
+}
+
+.contact-form-input {
+    width: 340px;
+    height: 70px;
+}
+
+textarea {
+    margin-top: 45px;
+    padding-top: 35px;
+    width: 100%;
+    height: 250px;
+    resize: none;
+}
+
+.send-msg-btn {
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 45px;
+    background-color: #ff2d2d;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-info-block {
+    width: 575px;
+    height: 480px;
+    background-color: #313030;
+    position: relative;
+    bottom: 480px;
+    left: 1000px;
+}
+
+address {
+    font-style: normal;
+}
+
+.contact-info-container {
+    margin-right: 240px;
+    text-align: left;
+    padding-top: 145px;
+    padding-left: 80px;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.contact-info-p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contact-info-p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #313030;
+    color: #b8b8b8;
+    font-size: 16px;
+    height: 110px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-copyright {
+    padding-top: 60px;
+}
+
+.social-icons-group {
+    margin-top: 47px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.social-icon:last-child {
+    margin-right: 0;
+}
