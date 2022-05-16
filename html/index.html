@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>HW 12 Artur</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
@@ -15,10 +17,12 @@
 <header>
     <div class="container">
         <nav>
-            <a class="active-link" href="#">home</a>
-            <a href="#">portfolio</a>
-            <a href="#">about us</a>
-            <a href="#">contact</a>
+            <ul>
+                <li><a class="active-link" href="#">home</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
         </nav>
     </div>
 </header>
@@ -42,7 +46,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="services">
         <div class="container">
             <div class="learn-more">
                 <div class="learn-more-left">
@@ -53,7 +57,6 @@
                     <a class="learn-more-button" href="#">Learn More</a>
                 </div>
                 <div class="learn-more-right">
-
 
                     <div class="bullet">
                         <div class="bullet-img">
@@ -99,25 +102,24 @@
         </div>
     </section>
     <div class="container">
-        <hr>
     </div>
-    <section>
+    <section class="product-section">
         <div class="container">
             <div class="feature-product">
                 <div class="feature-product-top">
                     <h2>feature product</h2>
                     <p class="feature-product-top-p">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do
-                        eiusmod tempor incididunt ut
-                        labore et.</p>
+                        eiusmod tempor incididunt ut labore et.</p>
                 </div>
-                <hr class="feature-hr">
                 <div class="feature-product-bottom">
                     <div class="feature-product-bottom-nav">
-                        <a class="feature-link active" href="#">all</a>
-                        <a class="feature-link" href="#">print template</a>
-                        <a class="feature-link" href="#">web template</a>
-                        <a class="feature-link" href="#">user interface</a>
-                        <a class="feature-link" href="#">mock-up</a>
+                        <ul>
+                            <li><a class="feature-link active" href="#">all</a></li>
+                            <li><a class="feature-link" href="#">print template</a></li>
+                            <li><a class="feature-link" href="#">web template</a></li>
+                            <li><a class="feature-link" href="#">user interface</a></li>
+                            <li><a class="feature-link" href="#">mock-up</a></li>
+                        </ul>
                     </div>
 
                     <div class="feature-gallery">
@@ -159,7 +161,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="meet-team">
         <div class="container">
             <div class="our-team">
                 <div class="our-team-top">
@@ -167,7 +169,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut
                         labore Ui / Ux , print template.</p>
                 </div>
-                <hr class="team-hr">
                 <div class="our-team-bottom">
                     <div class="our-team-left">
                         <img src="../images/vzardini.png" alt="portrait">
@@ -177,10 +178,12 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut
                             labore Ui / Ux , print template.</p>
                         <div class="team-social-nav">
-                            <a class="team-social-link" href="#" target="_blank">Facebook</a>
-                            <a class="team-social-link" href="#" target="_blank">Dribble</a>
-                            <a class="team-social-link" href="#" target="_blank">Behance</a>
-                            <a class="team-social-link" href="#" target="_blank">Twitter</a>
+                            <ul>
+                                <li><a class="team-social-link" href="#" target="_blank">Facebook</a></li>
+                                <li><a class="team-social-link" href="#" target="_blank">Dribble</a></li>
+                                <li><a class="team-social-link" href="#" target="_blank">Behance</a></li>
+                                <li><a class="team-social-link" href="#" target="_blank">Twitter</a></li>
+                            </ul>
                         </div>
                         <div class="social-review">
                             <div class="social-review-img">
@@ -191,12 +194,21 @@
                             </div>
                             <div class="social-review-img">
                                 <img src="../images/gallery-item.png" alt="gallery image">
+                                <div class="pop-up">
+                                    <p class="pop-up-p">sokina jue</p>
+                                </div>
                             </div>
                             <div class="social-review-img">
                                 <img src="../images/gallery-item.png" alt="gallery image">
+                                <div class="pop-up">
+                                    <p class="pop-up-p">sokina jue</p>
+                                </div>
                             </div>
                             <div class="social-review-img">
                                 <img src="../images/gallery-item.png" alt="gallery image">
+                                <div class="pop-up">
+                                    <p class="pop-up-p">sokina jue</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -211,13 +223,16 @@
                 <p class="subscribe-block-p">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
                     eiusmod.</p>
                 <form action="#" method="post">
-                    <input class="email-sub" type="email" name="email-sub" id="email_sub" placeholder="Email Adress...">
+                    <label>
+                        <input class="email-sub" type="email" name="email-sub" id="email_sub"
+                               placeholder="Email Adress...">
+                    </label>
                     <button class="subscribe-btn" type="submit" name="submit_email" id="submit_email">SUBSCRIBE</button>
                 </form>
             </div>
         </div>
     </section>
-    <section>
+    <section class="feedback">
         <div class="container">
             <div class="get-in-touch">
                 <div class="get-in-touch-top">
@@ -226,15 +241,20 @@
                         labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing
                         elit, sed do eiusmod tempor incididunt ut labore et.</p>
                 </div>
-                <hr class="get-in-touch-hr">
                 <div class="get-in-touch-bottom">
                     <form action="#" method="post">
                         <div class="flex-inputs">
-                            <input class="contact-form-input" type="text" name="name" id="name" placeholder="Name">
-                            <input class="contact-form-input" type="email" name="email-msg" id="email-msg"
-                                   placeholder="Your Mail">
+                            <label>
+                                <input class="contact-form-input" type="text" name="name" id="name" placeholder="Name">
+                            </label>
+                            <label>
+                                <input class="contact-form-input" type="email" name="email-msg" id="email-msg"
+                                       placeholder="Your Mail">
+                            </label>
                         </div>
-                        <textarea class="contact-form-textarea" placeholder="Type your message"></textarea>
+                        <label>
+                            <textarea class="contact-form-textarea" placeholder="Type your message"></textarea>
+                        </label>
                         <button class="send-msg-btn" type="submit" name="send-msg" id="send-msg">SEND MESSAGE</button>
                     </form>
                     <div class="contact-info-block">
@@ -259,20 +279,32 @@
     <div class="container">
         <div class="footer-wrapper">
             <p class="footer-copyright">© Copyright @Junaed 2016, All rights reserved.</p>
-            <div class="social-icons-group">
-                <div class="social-icon">
-                    <img alt="social network icon" src="../images/twitter.png">
-                </div>
-                <div class="social-icon">
-                    <img alt="social network icon" src="../images/linkedin.png">
-                </div>
-                <div class="social-icon">
-                    <img alt="social network icon" src="../images/google.png">
-                </div>
-                <div class="social-icon">
-                    <img alt="social network icon" src="../images/fb.png">
-                </div>
-            </div>
+            <nav class="social-icons-group">
+                <ul>
+                    <li>
+                        <div class="social-icon">
+                            <a href="https://twitter.com"><img alt="social network icon"
+                                                               src="../images/twitter.png"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="social-icon">
+                            <a href="https://twitter.com"><img alt="social network icon"
+                                                               src="../images/linkedin.png"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="social-icon">
+                            <a href="https://twitter.com"><img alt="social network icon" src="../images/google.png"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="social-icon">
+                            <a href="https://twitter.com"><img alt="social network icon" src="../images/fb.png"></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </footer>
