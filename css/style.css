@@ -1,13 +1,32 @@
+:root {
+    --accent-color: #ff2d2d;
+    --dark-background: #313030;
+
+    --horizontal-offset: 15px;
+    --tempalte-content-width: 1250px;
+    --content-width: calc(var(--tempalte-content-width) + var(--horizontal-offset) * 2);
+
+    --main-font-family: 'Open Sans', sans-serif;
+
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-big: 24px;
+    --font-xl: 30px;
+    --font-xxl: 60px;
+
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-family: var(--main-font-family);
+    font-size: var(--font-md);
 
 }
 
 .container {
-    max-width: 1250px;
+    max-width: var(--content-width);
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 var(--horizontal-offset);
 }
 
 header {
@@ -16,7 +35,7 @@ header {
 }
 
 header nav ul {
-    background-color: #313030;
+    background-color: var(--dark-background);
     display: flex;
     justify-content: center;
 }
@@ -27,13 +46,13 @@ header nav li a {
     color: #e0e0e0;
     font-weight: bold;
     min-height: 100%;
-    font-size: 14px;
+    font-size: var(--font-sm);
     padding: 35px 25px;
     transition: .3s;
 }
 
 nav li a:hover {
-    background-color: #ff3f40;
+    background-color: var(--accent-color);
 }
 
 header nav li {
@@ -42,7 +61,7 @@ header nav li {
 
 .active-link {
     padding: 35px 25px;
-    background-color: #ff3f40;
+    background-color: var(--accent-color);
 }
 
 .section-banner {
@@ -60,7 +79,7 @@ header nav li {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: var(--font-xxl);
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -78,21 +97,21 @@ p {
 .banner-button {
     display: block;
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--font-lg);
     text-align: center;
     color: white;
-    background-color: #ff2d2d;
+    background-color: var(--accent-color);
     padding: 20px 58px;
     max-width: 230px;
     border-radius: 10px;
     text-decoration: none;
-    border: 5px #ff2d2d solid;
+    border: 5px var(--accent-color) solid;
     transition: .3s;
 }
 
 .banner-button:hover {
     background-color: white;
-    color: #ff2d2d;
+    color: var(--accent-color);
 }
 
 video {
@@ -129,7 +148,7 @@ h2 {
 .learn-more-button {
     border: 2px solid red;
     color: red;
-    font-size: 18px;
+    font-size: var(--font-lg);
     text-decoration: none;
     border-radius: 10px;
     padding: 20px 60px;
@@ -142,7 +161,7 @@ h2 {
 
 .learn-more-button:hover {
     color: white;
-    background-color: #ff2d2d;
+    background-color: var(--accent-color);
 }
 
 .learn-more-right {
@@ -156,7 +175,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: var(--font-big);
     margin-bottom: 20px;
 }
 
@@ -183,7 +202,7 @@ h3 {
     height: 2px;
     margin: 30px auto 0;
     align-items: center;
-    border-bottom: 5px solid #ff2d2d;
+    border-bottom: 5px solid var(--accent-color);
 }
 
 .feature-product-bottom-nav ul {
@@ -201,11 +220,11 @@ h3 {
 }
 
 .feature-link:hover {
-    color: #ff2d2d;
+    color: var(--accent-color);
 }
 
 .feature-link.active {
-    color: #ff2d2d;
+    color: var(--accent-color);
 }
 
 .feature-gallery {
@@ -231,7 +250,7 @@ h3 {
     width: 130px;
     height: 5px;
     align-items: center;
-    border-bottom: 5px solid #ff2d2d;
+    border-bottom: 5px solid var(--accent-color);
     margin-top: 35px;
 }
 
@@ -245,7 +264,7 @@ h3 {
 
 h4 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: var(--font-xl);
     margin-bottom: 45px;
 }
 
@@ -325,8 +344,8 @@ h5 {
 .subscribe-btn {
     width: 213px;
     height: 78px;
-    border: 5px #ff2d2d solid;
-    background-color: #ff2d2d;
+    border: 5px var(--accent-color) solid;
+    background-color: var(--accent-color);
     border-radius: 5px;
     margin-left: 22px;
     color: white;
@@ -336,7 +355,7 @@ h5 {
 
 .subscribe-btn:hover {
     background-color: white;
-    color: #ff2d2d;
+    color: var(--accent-color);
 }
 
 .get-in-touch-top p {
@@ -349,7 +368,7 @@ h5 {
     width: 130px;
     height: 5px;
     align-items: center;
-    border-bottom: 5px solid #ff2d2d;
+    border-bottom: 5px solid var(--accent-color);
     margin: 55px 0 80px 0;
 }
 
@@ -391,20 +410,20 @@ textarea {
 .send-msg-btn {
     width: 100%;
     padding: 30px 0;
-    background-color: #ff2d2d;
+    background-color: var(--accent-color);
     border-radius: 5px;
-    border: 5px #ff2d2d solid;
+    border: 5px var(--accent-color) solid;
     color: white;
     font-weight: bold;
 }
 
 .send-msg-btn:hover {
     background-color: white;
-    color: #ff2d2d;
+    color: var(--accent-color);
 }
 
 .contact-info-block {
-    background-color: #313030;
+    background-color: var(--dark-background);
     height: inherit;
     padding: 145px 0 0 80px;
 }
@@ -421,7 +440,7 @@ textarea {
     height: 100%;
     top: 0;
     z-index: -1;
-    background-color: #313030;
+    background-color: var(--dark-background);
 }
 
 .get-in-touch-bottom {
@@ -433,7 +452,7 @@ address {
 }
 
 h6 {
-    font-size: 18px;
+    font-size: var(--font-lg);
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -451,9 +470,9 @@ h6 {
 }
 
 footer {
-    background-color: #313030;
+    background-color: var(--dark-background);
     color: #b8b8b8;
-    font-size: 16px;
+    font-size: var(--font-md);
 }
 
 .footer-wrapper {
@@ -788,7 +807,7 @@ footer {
     }
 
     .bullet h3 {
-        font-size: 16px;
+        font-size: var(--font-md);
     }
 
     .feature-product-bottom-nav ul {
@@ -851,7 +870,7 @@ footer {
     }
 
     h1, h2, h3, h4, h5 {
-        font-size: 30px;
+        font-size: var(--font-xl);
     }
 
     .section-banner,
